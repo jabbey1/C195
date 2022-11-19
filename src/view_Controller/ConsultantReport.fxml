@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_Controller.ConsultantReport">
+   <children>
+      <Button layoutX="259.0" layoutY="322.0" mnemonicParsing="false" onAction="#onActionExit" text="Return" />
+      <VBox layoutX="181.0" layoutY="85.0" prefHeight="200.0" prefWidth="100.0" spacing="24.0">
+         <children>
+            <Label text="Dr. White" />
+            <Label text="Dr. Green" />
+            <Label text="Dr. Brown" />
+            <Label text="Dr. Plum" />
+            <Label text="Dr. Grey" />
+         </children>
+      </VBox>
+      <VBox layoutX="289.0" layoutY="85.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+         <children>
+            <TextField fx:id="whiteTxt" />
+            <TextField fx:id="greenTxt" />
+            <TextField fx:id="brownTxt" />
+            <TextField fx:id="plumTxt" />
+            <TextField fx:id="greyTxt" />
+         </children>
+      </VBox>
+      <Label layoutX="210.0" layoutY="36.0" text="Appointments by consultant" />
+   </children>
+</AnchorPane>

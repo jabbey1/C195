@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_Controller.AppAdd">
+   <children>
+      <ChoiceBox fx:id="consultantChoiceBox" layoutX="121.0" layoutY="107.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="394.0" layoutY="205.0" onAction="#onActionDatePicked" />
+      <Label layoutX="19.0" layoutY="38.0" text="Customer:" />
+      <Label layoutX="20.0" layoutY="111.0" text="Consultant:" />
+      <Label layoutX="23.0" layoutY="76.0" text="City:" />
+      <Label layoutX="316.0" layoutY="209.0" text="Date:" />
+      <Label layoutX="316.0" layoutY="258.0" text="Time:" />
+      <Label layoutX="21.0" layoutY="192.0" text="Type:" />
+      <ChoiceBox fx:id="typeChoiceBox" layoutX="121.0" layoutY="188.0" prefWidth="150.0" />
+      <Button layoutX="272.0" layoutY="345.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+      <Button layoutX="234.0" layoutY="307.0" mnemonicParsing="false" onAction="#onActionAddAppointment" text="Add appointment" />
+      <ChoiceBox fx:id="timeChoiceBox" disable="true" layoutX="406.0" layoutY="254.0" prefWidth="150.0" />
+      <TextField fx:id="cityText" editable="false" layoutX="122.0" layoutY="72.0" />
+      <ComboBox fx:id="customerCombobox" layoutX="121.0" layoutY="34.0" onAction="#onActionSelect" prefWidth="150.0" />
+      <TextArea fx:id="descriptionText" layoutX="318.0" layoutY="72.0" prefHeight="113.0" prefWidth="250.0" wrapText="true" />
+      <Label layoutX="318.0" layoutY="38.0" text="Please provide a description of your appointment: " />
+      <Label layoutX="22.0" layoutY="267.0" text="Title:" />
+      <TextField fx:id="titleText" layoutX="122.0" layoutY="263.0" />
+      <Label layoutX="23.0" layoutY="152.0" text="Location:" />
+      <ComboBox fx:id="locationComboBox" layoutX="122.0" layoutY="148.0" prefWidth="150.0" />
+      <ComboBox fx:id="lengthComboBox" layoutX="121.0" layoutY="222.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="226.0" text="Length (minutes)" />
+   </children>
+</AnchorPane>

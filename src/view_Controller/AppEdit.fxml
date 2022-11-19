@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_Controller.AppEdit">
+   <children>
+      <Button layoutX="41.0" layoutY="336.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+      <TableView fx:id="appTableView" layoutX="23.0" layoutY="14.0" onMouseClicked="#onActionAppSelect" prefHeight="303.0" prefWidth="277.0">
+        <columns>
+          <TableColumn fx:id="custCol" prefWidth="89.66667175292969" text="Customer" />
+          <TableColumn fx:id="cityCol" minWidth="0.0" prefWidth="77.66664123535156" text="City" />
+            <TableColumn fx:id="dateCol" prefWidth="108.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="107.0" layoutY="336.0" mnemonicParsing="false" onAction="#onActionEdit" text="Edit" />
+      <Button layoutX="176.0" layoutY="336.0" mnemonicParsing="false" onAction="#onActionDelete" text="Delete" />
+      <ComboBox fx:id="consultantBox" layoutX="414.0" layoutY="13.0" prefWidth="150.0" />
+      <Label layoutX="324.0" layoutY="17.0" text="Consultant" />
+      <Label layoutX="324.0" layoutY="63.0" text="Location" />
+      <Label layoutX="322.0" layoutY="109.0" text="Type" />
+      <Label layoutX="322.0" layoutY="157.0" text="Length" />
+      <Label layoutX="324.0" layoutY="200.0" text="Title" />
+      <ComboBox fx:id="locationBox" layoutX="414.0" layoutY="59.0" prefWidth="150.0" />
+      <ComboBox fx:id="typeBox" layoutX="414.0" layoutY="105.0" prefWidth="150.0" />
+      <ComboBox fx:id="lengthBox" layoutX="414.0" layoutY="153.0" onAction="#onActionLengthChange" prefWidth="150.0" />
+      <TextField fx:id="titleText" layoutX="415.0" layoutY="196.0" />
+      <ComboBox fx:id="timeBox" layoutX="414.0" layoutY="284.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="414.0" layoutY="241.0" onAction="#onActionDateChange" />
+      <Label layoutX="323.0" layoutY="245.0" text="Date" />
+      <Label layoutX="322.0" layoutY="288.0" text="Time" />
+      <Label layoutX="321.0" layoutY="340.0" text="Description" />
+      <TextArea fx:id="descriptionText" layoutX="395.0" layoutY="321.0" prefHeight="56.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>
